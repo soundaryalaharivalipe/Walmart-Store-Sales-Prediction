@@ -38,7 +38,9 @@ Trained various models including:
 - Extra Trees
 - Model Evaluation
 
-Used **Weighted Mean Absolute Error (WMAE)** as the evaluation metric. Random Forest and Extra Trees models performed best, with Random Forest achieving the lowest WMAE.
+Used **Weighted Mean Absolute Error (WMAE)** as the evaluation metric. 
+
+Random Forest and Extra Trees models performed best, with Random Forest achieving the lowest WMAE.
 
 **Hyperparameter Tuning**
 Optimized parameters for the Random Forest model to improve performance.
