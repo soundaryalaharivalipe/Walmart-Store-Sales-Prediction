@@ -13,32 +13,32 @@ Sales predictions are affected by holidays, markdown events, and other factors. 
 
 ## Data Description
 The data consists of historical sales data for 45 Walmart stores, including:
-store.csv: Detailed information about the stores.
-train.csv: Historical sales data.
-test.csv: Test data for predictions.
-features.csv: Additional data like fuel price, temperature, and markdown events.
+- **store.csv:** Detailed information about the stores.
+- **train.csv:** Historical sales data.
+- **test.csv:** Test data for predictions.
+- **features.csv:** Additional data like fuel price, temperature, and markdown events.
 
 ## Methodology
 
 Data Preprocessing
-Missing Values: Filled missing values in Markdown fields with 0 and used mean values for CPI and Unemployment.
-Encoding Categorical Data: Converted categorical data in IsHoliday and Type fields to numerical values.
-Feature Engineering
-Holiday Features: Created features such as Days_to_Thanksgiving, Days_to_Christmas, and indicators for holidays.
-Markdown Features: Combined markdown fields into a single MarkdownsSum feature.
-Exploratory Data Analysis (EDA)
-Analyzed the impact of store type, holidays, store size, and department on weekly sales using visualizations.
+- **Missing Values:** Filled missing values in Markdown fields with 0 and used mean values for CPI and Unemployment.
+- **Encoding Categorical Data:** Converted categorical data in IsHoliday and Type fields to numerical values.
+- **Feature Engineering**
+  **Holiday Features:** Created features such as Days_to_Thanksgiving, Days_to_Christmas, and indicators for holidays.
+  **Markdown Features:** Combined markdown fields into a single MarkdownsSum feature.
+- E**xploratory Data Analysis (EDA)** : Analyzed the impact of store type, holidays, store size, and department on weekly sales using visualizations.
 
 ## Machine Learning Models
 Trained various models including:
 
-Linear Regression
-Ridge Regression
-Decision Tree
-Random Forest
-Extra Trees
-Model Evaluation
-Used Weighted Mean Absolute Error (WMAE) as the evaluation metric. Random Forest and Extra Trees models performed best, with Random Forest achieving the lowest WMAE.
+- Linear Regression
+- Ridge Regression
+- Decision Tree
+- Random Forest
+- Extra Trees
+- Model Evaluation
+
+Used **Weighted Mean Absolute Error (WMAE)** as the evaluation metric. Random Forest and Extra Trees models performed best, with Random Forest achieving the lowest WMAE.
 
 **Hyperparameter Tuning**
 Optimized parameters for the Random Forest model to improve performance.
